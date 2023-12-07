@@ -1,6 +1,6 @@
 # GeoIP-simple
 
-This is a simple REST implementation consuming IPstack's Standard Lookup API https://ipstack.com/documentation#standard that performs IP Geolocation.
+This is a simple REST implementation consuming [IPstack's Standard Lookup API](https://ipstack.com/documentation#standard) that performs IP Geolocation.
 The application is command line based, it takes a single argument (any valid public ipv4 or ipv6 address).
 It then returns a python dictionary (JSON) of latitude and longitude coordinates for a given public ip address.
 
@@ -8,7 +8,7 @@ It then returns a python dictionary (JSON) of latitude and longitude coordinates
 # How to use
 
 IPstack requires an api "access key" in order to authenticate to their services. 
-If you do not have an IP stack API access key, you can sign up for one FREE here: https://ipstack.com/signup/free
+If you do not have an IP stack API access key, you can sign up for one free [here.](https://ipstack.com/signup/free)
 
 On the first run of the application, it will check to see if an IPSTACK_ACCESS_KEY environment variable is present in the local .env file.
 This should be present in the current working directory of the application.
