@@ -10,6 +10,7 @@ It then returns a python dictionary (JSON) of latitude and longitude coordinates
 IPstack requires an api "access key" in order to authenticate to their services. 
 If you do not have an IP stack API access key, you can sign up for one free [here.](https://ipstack.com/signup/free)
 
+You will need to install the prerequisite python packages. This can be easily achieved using "pip3" and the requirements.txt file provided.
 On the first run of the application, it will check to see if an IPSTACK_ACCESS_KEY environment variable is present in the local .env file.
 This should be present in the current working directory of the application.
 If one is not found, you will be prompted for your IPSTACK_ACCESS_KEY and it will be saved in a new .env file.
@@ -19,7 +20,11 @@ Any subsequent runs of the application will always will check for the .env file 
 It is possible to run the container with a persistent volume to prevent having to perform this procedure. 
 This has not been tested, and may require some minor tweaks with the .env file [and where its stored]***
 
+
+
 # Example:
+
+pip3 install -r requirements.txt
 
 python3 geoip-simple.py 4.4.4.4
 
