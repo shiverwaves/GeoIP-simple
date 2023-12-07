@@ -24,6 +24,10 @@ This has not been tested, and may require some minor tweaks with the .env file [
 
 # Example:
 
+git clone GeoIP-simple
+
+cd GeoIP-simple
+
 pip3 install -r requirements.txt
 
 python3 geoip-simple.py 4.4.4.4
@@ -35,13 +39,17 @@ python3 geoip-simple.py 4.4.4.4
 # How to run in docker container
 
 1. Clone the repo
-git clone GeoIP-simple
+
+   git clone GeoIP-simple
 
 3. Execute the build process
-docker build -t geo-ip-simple --rm .
+
+   docker build -t geo-ip-simple --rm .
 
 4. Run the container in interactive mode
-docker run -it --rm geo-ip-simple
 
-5. Execute the python application
-python3 geoip-simple.py 4.4.4.4
+   docker run -it --rm geo-ip-simple
+
+5. Execute the python application (inside the container)
+
+   python3 geoip-simple.py 4.4.4.4
