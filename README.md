@@ -20,10 +20,6 @@ Any subsequent runs of the application will always will check for the .env file 
 It is possible to run the container with a persistent volume to prevent having to perform this procedure. 
 This has not been tested, and may require some minor tweaks with the .env file [and where its stored]***
 
-
-
-# Example:
-
 ***1. Clone the repo***
 
    git clone GeoIP-simple
@@ -36,12 +32,11 @@ This has not been tested, and may require some minor tweaks with the .env file [
    
    pip3 install -r requirements.txt
 
-***4. Execute the python application***
+***4. Execute python application***
    
    python3 geoip-simple.py 4.4.4.4
 
-
-# Response Example:
+# Response Example
 
 {'longitude': -157.81410217285156, 'latitude': 21.32217025756836}
 
